@@ -1,0 +1,289 @@
+@-ms-viewport{
+    width: device-width;
+  }
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+:root {
+    --background-gradient:     radial-gradient(farthest-corner at left bottom, #ff38eb,30%, transparent),
+    /* radial-gradient(farthest-corner at left top, #8D6DB7, rgb(141, 109, 183)50%,transparent), */
+    linear-gradient(to left, #00ddff, 80%, transparent);
+}
+.navbar {
+    position: fixed;
+    display: flex;
+    top: 0%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: rgba(0, 0, 0, 0.252);
+    z-index: 10;
+    backdrop-filter: blur(300px);
+
+   }
+.navbar a {
+    padding: 5px 14px;
+    font-size: 40px;
+    color: rgba(23, 23, 23,0.9);
+    text-decoration: none;
+   }
+
+.menu {
+    display: flex;
+    gap: 1em;
+    list-style-type: none;
+   }
+.menu a {
+    padding: 5px 14px;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgba(23, 23, 23, 0.7);
+   }
+html {
+    background: rgba(23, 23, 23);
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+    /* background: var(--background-gradient); */
+    /* transition: background-color 0.5s linear; */
+}
+.home {
+    position: relative;
+    margin-top: 0px;
+    min-height: 100vh;
+    /* background: var(--background-gradient); */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.rectangularblur {
+    position: absolute;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.151);
+    backdrop-filter: blur(300px);
+    z-index: 2;
+}
+.purple {
+    position: absolute;
+    height: 112vh;
+    width: 80vw;
+    background-color: #5d2d97bf;
+    border-radius: 50%;
+    top: -26vw;
+    left: -33vh;
+    filter: blur(170px);
+    -webkit-filter: blur(170px);
+    z-index: 2;
+}
+.circle {
+    position: absolute;
+    width: 50vw;
+    height: 83vh;
+    border-radius: 50%;
+    background-color: #D9ABFF;
+    left: -20vw;
+    top: -50vh;
+    filter: blur(40px);
+    -webkit-filter: blur(40px);
+    z-index: 2;
+}
+.purple2 {
+    position: absolute;
+    height: 112vh;
+    width: 80vw;
+    background-color: #5d2d97bf;
+    border-radius: 50%;
+    top: 226vh;
+    left: -33vh;
+    filter: blur(170px);
+    -webkit-filter: blur(170px);
+    z-index: 2;
+}
+.circle2 {
+    position: absolute;
+    width: 40vw;
+    height: 73vh;
+    border-radius: 50%;
+    background-color: #D9ABFF;
+    left: -15vw;
+    top: 150vh;
+    filter: blur(40px);
+    -webkit-filter: blur(40px);
+    z-index: 2;
+}
+.blue {
+    position: absolute;
+    height: 102vh;
+    width: 62vw;
+    background-color: #99edf9;
+    border-radius: 50%;
+    bottom: -36vw;
+    right: -30vh;
+    filter: blur(20px);
+    -webkit-filter: blur(20px);
+    z-index: 2;
+}
+.container {
+    position: relative;
+    max-width: 50%;
+    padding-top: 24vh;
+    padding-left: 20vh;
+    z-index: 3;
+}
+.hello {
+    font-family: Poppins;
+    font-size: 2vw;
+    margin: 0px;
+    margin-bottom: -1vh;
+    font-weight: 400;
+    color: rgba(23, 23, 23, 0.6);
+}
+.name {
+    font-family: Poppins;
+    font-size: 7.3vw;
+    margin: 0px;
+    font-weight: bolder;
+    margin-bottom: -1vh;
+    color: rgba(23, 23, 23, 0.7);
+}
+.student {
+    font-family: Poppins;
+    font-size: 2.8vw;
+    margin: 0px;
+    font-weight: 500;
+    color: rgba(23, 23, 23, 0.6);
+}
+.school {
+    font-family: Poppins;
+    font-size: 2.5vw;
+    margin: 0px;
+    font-weight: 100;
+    color: rgba(23, 23, 23, 0.6);
+    
+}
+.scroll {
+    width: 15vw;
+    font-family: 'Poppins';
+    font-size: 3vh;
+    text-align: center;
+    margin: 0px;
+    color: rgba(23, 23, 23, 0.7);
+}
+.dark {
+    position: relative;
+    min-height: 100vh;
+    z-index: 3;
+}
+.aboutcontainer {
+    background-color: #202020a7;
+    width: 70vw;
+    margin-top: 12vh;
+    padding: 0vh 2vw 10vh 2vw;
+    border-radius: 50px;
+    backdrop-filter: blur(70px);
+    -webkit-backdrop-filter: blur(70px);
+}
+.about {
+    display: flex;
+    justify-content: center;
+    padding-top: 7vh;
+}
+.pfp {
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-right: 10vw;
+}
+.aboutme {
+    font-family: Poppins;
+    font-size: 20px;
+    color: rgba(255,255,255,0.7);
+}
+.pfp img {
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+}
+.abouttxt {
+    position: relative;
+    font-family: Poppins;
+    font-size: 6vw;
+    padding: 5vh 10vh 0 10vh;
+    margin: 0;
+    text-align: center;
+    background: var(--background-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100%;
+    z-index: 10;
+}
+.experiencetxt {
+    position: relative;
+    font-family: Poppins;
+    font-size: 6vw;
+    padding: 15vh 10vh 0 10vh;
+    margin: 0;
+    text-align: center;
+    background: var(--background-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100%;
+    z-index: 10;
+}
+.canvascontainer {
+    padding: 0vh 10vh 0 10vh;
+}
+.featuredprojects {
+    position: relative;
+    font-family: Poppins;
+    font-size: 6vw;
+    padding: 10vh 10vh 0 10vh;
+    margin: 0;
+    text-align: center;
+    color: rgba(23,23,23,0.7);
+}
+.projectfeature {
+    width: 38vw;
+    height: 46vh;
+    background-color: black;
+    border-radius: 30px;
+    margin-right: 2vw;
+    bottom: 0;
+    align-content: bottom;
+}
+.projectdescriptionbox {
+    position: relative;
+    width: 30vw;
+    height: 54vh;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    border-radius: 30px;
+    margin-left: 2vw;
+}
+.navcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-left: 10vw;
+    padding-right: 12vw;
+    padding-top: 3%;
+}
+.navcontainer>button {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.navcontainer>button:active {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.navcontainer>a {
+    cursor: pointer;
+}

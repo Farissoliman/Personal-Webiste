@@ -41,13 +41,15 @@
     color: rgba(23, 23, 23, 0.7);
    }
 html {
-    background: rgba(23, 23, 23);
+    background: rgba(23, 23, 23,0.965);
+    -moz-background: rgba(23, 23, 23,0.9);
 }
 body{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
     overscroll-behavior: none;
+    background-color: "#00ddff"
     /* background: var(--background-gradient); */
     /* transition: background-color 0.5s linear; */
 }
@@ -68,39 +70,40 @@ body{
 }
 .purple {
     position: absolute;
-    height: 112vh;
-    width: 80vw;
-    background-color: #5d2d97bf;
-    border-radius: 50%;
-    top: -26vw;
-    left: -33vh;
-    filter: blur(170px);
-    -webkit-filter: blur(170px);
+    height: 132vh;
+    width: 90vw;
+    /* background-color: #5d2d97bf;
+    border-radius: 50%; */
+    top: -41vw;
+    left: -73vh;
     z-index: 2;
+    opacity: 0.7;
 }
 .circle {
     position: absolute;
     width: 50vw;
     height: 83vh;
-    border-radius: 50%;
-    background-color: #D9ABFF;
+    /* border-radius: 50%;
+    background-color: #D9ABFF; */
     left: -20vw;
     top: -50vh;
-    filter: blur(40px);
-    -webkit-filter: blur(40px);
+    /* filter: blur(40px);
+    -webkit-filter: blur(40px); */
     z-index: 2;
 }
 .purple2 {
     position: absolute;
-    height: 112vh;
-    width: 80vw;
-    background-color: #5d2d97bf;
-    border-radius: 50%;
+    height: 132vh;
+    width: 90vw;
+    /* background: hsla(267, 54%, 38%, 0.749);
+    -moz-background: #5d2d976e;
+    border-radius: 50%; */
     top: 226vh;
-    left: -33vh;
-    filter: blur(170px);
-    -webkit-filter: blur(170px);
+    right: -73vh;
+    /* filter: blur(170px);
+    -webkit-filter: blur(170px); */
     z-index: 2;
+    opacity: 0.7;
 }
 .circle2 {
     position: absolute;
@@ -118,17 +121,17 @@ body{
     position: absolute;
     height: 102vh;
     width: 62vw;
-    background-color: #99edf9;
-    border-radius: 50%;
+    /* background-color: #99edf9;
+    border-radius: 50%; */
     bottom: -36vw;
-    right: -30vh;
-    filter: blur(20px);
-    -webkit-filter: blur(20px);
+    right: -40vh;
+    /* filter: blur(20px);
+    -webkit-filter: blur(20px); */
     z-index: 2;
 }
 .container {
     position: relative;
-    max-width: 50%;
+    width: 70%;
     padding-top: 24vh;
     padding-left: 20vh;
     z-index: 3;

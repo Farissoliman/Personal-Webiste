@@ -12,16 +12,15 @@ window.onload = function() {
 const $body = $('body');
 const $startTrigger = $body.find("container");
 const $endTrigger = $body.find("endPoint")
-const colorToBlue = gsap.fromTo($body, { background: "linear-gradient(to left, #00ddff, 80%, #ff38eb)" },{ background: "#1E1E1E" })
+const colorToDark = gsap.fromTo($body, { background: "linear-gradient(to left, #62DBF1, 80%, #F992F1)" },{ background: "#1E1E1E" })
 
 ScrollTrigger.create({
   trigger: $startTrigger,
   start: "top+=100px top",
-  endTrigger: $endTrigger,
-  end: "+=100%",
+  end: "+=800px",
   markers: false,
   scrub: true,
-  animation: colorToBlue
+  animation: colorToDark
   //onEnter: () =>
   //  gsap.to($section, { backgroundColor: "#232E3E", overwrite: "auto" }),
   //onLeaveBack: () =>
@@ -30,12 +29,12 @@ ScrollTrigger.create({
 
 
 
-const colorToWhite= gsap.fromTo($body, { background: "#1E1E1E" },{ background: "linear-gradient(to left, #00ddff, 80%, #ff38eb)", immediateRender: false })
+const colorToWhite= gsap.fromTo($body, { background: "#1E1E1E" },{ background: "linear-gradient(45deg, rgba(249,146,241,1) 0%, rgba(98,219,241,1) 38%)", immediateRender: false })
 
 ScrollTrigger.create({
   trigger: $startTrigger,
-  start: "top+=1440px top",
-  end: "+=100%",
+  start: "top+=1740px top",
+  end: "+=700px",
   markers: false,
   scrub: true,
   animation: colorToWhite

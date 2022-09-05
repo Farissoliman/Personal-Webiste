@@ -123,7 +123,7 @@ body{
     width: 62vw;
     /* background-color: #99edf9;
     border-radius: 50%; */
-    bottom: -36vw;
+    top: 36vw;
     right: -40vh;
     /* filter: blur(20px);
     -webkit-filter: blur(20px); */
@@ -174,11 +174,6 @@ body{
     text-align: center;
     margin: 0px;
     color: rgba(23, 23, 23, 0.7);
-}
-.dark {
-    position: relative;
-    min-height: 100vh;
-    z-index: 3;
 }
 .aboutcontainer {
     background-color: #202020a7;

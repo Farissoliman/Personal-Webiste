@@ -183,6 +183,7 @@ body{
     border-radius: 50px;
     backdrop-filter: blur(70px);
     -webkit-backdrop-filter: blur(70px);
+    z-index: 3;
 }
 .about {
     display: flex;

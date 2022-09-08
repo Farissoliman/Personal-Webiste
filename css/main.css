@@ -196,12 +196,13 @@ body{
     border-radius: 50%;
     overflow: hidden;
     vertical-align: middle;
-    margin-right: 10vw;
+    margin-right: 5vw;
 }
 .aboutme {
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 18px;
     color: rgba(255,255,255,0.7);
+
 }
 .pfp img {
     width: 100%;

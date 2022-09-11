@@ -8,7 +8,17 @@ window.onload = function() {
     }
   };
 
+var canvas = document.getElementById('myCanvas');
+var canvasContainer = document.getElementById('myCanvas');
+var style = window.getComputedStyle(canvasContainer);
+var canvasWidth = style.getPropertyValue('width');
+var indexOfP = canvasWidth.indexOf("p");
+var widthNum = canvasWidth.substring(0,indexOfP);
+canvas.width = widthNum;
+var heightRatio = 1;
+canvas.height = canvas.width * heightRatio;
 
+//Background color change
 const $body = $('body');
 const $startTrigger = $body.find("container");
 const $endTrigger = $body.find("endPoint")

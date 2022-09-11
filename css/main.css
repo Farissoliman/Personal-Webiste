@@ -7,6 +7,9 @@
     /* radial-gradient(farthest-corner at left top, #8D6DB7, rgb(141, 109, 183)50%,transparent), */
     linear-gradient(to left, #00ddff, 80%, transparent);
 }
+@media (min-width: 992px) { 
+    
+}
 .navbar {
     position: fixed;
     display: flex;
@@ -16,7 +19,7 @@
     align-items: center;
     padding: 10px 0px;
     background-color: rgba(0, 0, 0, 0.252);
-    z-index: 10;
+    z-index: 100;
     backdrop-filter: blur(300px);
 
    }
@@ -187,6 +190,7 @@ body{
 }
 .about {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding-top: 7vh;
 }
@@ -226,7 +230,8 @@ body{
     position: relative;
     font-family: Poppins;
     font-size: 6vw;
-    padding: 15vh 10vh 0 10vh;
+    padding: 10vh 10vh 0 0vh;
+    max-width: 40vw;
     margin: 0;
     text-align: center;
     background: var(--background-gradient);
@@ -236,7 +241,10 @@ body{
     z-index: 10;
 }
 .canvascontainer {
-    padding: 0vh 10vh 0 10vh;
+    padding: 0vh 10vh 0 5vh;
+}
+.myCanvas {
+    width: 40vw;
 }
 .featuredprojects {
     position: relative;
@@ -258,7 +266,7 @@ body{
 }
 .projectdescriptionbox {
     position: relative;
-    width: 30vw;
+    min-width: 30vw;
     height: 54vh;
     background-color: rgba(0, 0, 0, 0.25);
     z-index: 10;

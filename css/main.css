@@ -7,9 +7,6 @@
     /* radial-gradient(farthest-corner at left top, #8D6DB7, rgb(141, 109, 183)50%,transparent), */
     linear-gradient(to left, #00ddff, 80%, transparent);
 }
-@media (min-width: 992px) { 
-    
-}
 .navbar {
     position: fixed;
     display: flex;
@@ -21,7 +18,6 @@
     background-color: rgba(0, 0, 0, 0.252);
     z-index: 100;
     backdrop-filter: blur(300px);
-
    }
 .navbar a {
     padding: 5px 14px;
@@ -29,7 +25,13 @@
     color: rgba(23, 23, 23,0.9);
     text-decoration: none;
    }
-
+.fa-bars {
+    position: absolute;
+    font-size: 40px;
+    color: rgba(0,0,0,0.7);
+    right: 5%;
+    top: 5%;
+    }
 .menu {
     display: flex;
     gap: 1em;
@@ -43,6 +45,18 @@
     font-weight: 500;
     color: rgba(23, 23, 23, 0.7);
    }
+.sidebar {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 1; 
+     top: 0;
+     right: 0;
+     background-color: #111;
+     overflow-x: hidden;
+     padding-top: 60px; 
+     transition: 0.5s;
+}
 html {
     background: rgba(23, 23, 23,0.965);
     -moz-background: rgba(23, 23, 23,0.9);
@@ -69,6 +83,7 @@ body{
     width: 100vw;
     background-color: rgba(255, 255, 255, 0.151);
     backdrop-filter: blur(300px);
+    filter: blur(300px);
     z-index: 2;
 }
 .purple {
@@ -217,7 +232,7 @@ body{
     position: relative;
     font-family: Poppins;
     font-size: 6vw;
-    padding: 5vh 10vh 0 10vh;
+    padding: 5vh 10vh 0 10vh; /* make the right padding 10vh for smaller devices */
     margin: 0;
     text-align: center;
     background: var(--background-gradient);
@@ -230,7 +245,7 @@ body{
     position: relative;
     font-family: Poppins;
     font-size: 6vw;
-    padding: 10vh 10vh 0 0vh;
+    padding: 10vh 10vh 0 5vh; /* make the right padding 10vh for smaller devices */
     max-width: 40vw;
     margin: 0;
     text-align: center;
@@ -256,7 +271,7 @@ body{
     color: rgba(23,23,23,0.7);
 }
 .projectfeature {
-    width: 38vw;
+    min-width: 38vw;
     height: 46vh;
     background-color: black;
     border-radius: 30px;
@@ -294,4 +309,44 @@ body{
 }
 .navcontainer>a {
     cursor: pointer;
+}
+
+@media (max-width: 926px) {
+    .navbar {
+        display: none;
+    }
+}
+@media (min-width: 926px) {
+    .sidebar {
+        display: none;
+    }
+    .fa-bars {
+        display: none;
+    }
+}
+@media (max-width: 600px) { 
+    .navbar a {
+        font-size: 30px;
+    }
+    .container {
+        padding-top: 15vh;
+        padding-left: 5vw;
+    }
+    .hello {
+        font-size: 2vh;
+    }
+    .name {
+        font-size: 7vh;
+    }
+    .student {
+        font-size: 2vh;
+    }
+    .school {
+        font-size: 2vh;
+    }
+    .scroll {
+        font-size: 2vh;
+        width: 100%;
+        bottom: 0;
+    }
 }

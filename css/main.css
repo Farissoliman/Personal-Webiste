@@ -332,6 +332,18 @@ body{
     .navbar a {
         font-size: 30px;
     }
+    .purple {
+        height: 100vh;
+        width: 170vw;
+        top: -100vw;
+        left: -40vh;
+    }
+    .blue {
+        height: auto;
+        width: 102vw;
+        top: 106vw;
+        right: -25vh;
+    }
     .home {
         display: flex;
         justify-content: center;
@@ -339,11 +351,11 @@ body{
     }
     .container {
         position: relative;
-        margin-top: 20vh;
+        margin-top: 30vh;
         display: flex;
         flex-wrap: wrap;
         padding: 0;
-        margin-bottom: 15vh;
+        margin-bottom: 35vh;
     }
     .hello {
         font-size: 13px;
@@ -363,12 +375,9 @@ body{
         text-align: right;
         font-size: 10px;
     }
-    .scroll {
-        font-size: 20px;
-        width: 100%;
-        bottom: 0;
+    .scrollContainer {
+        display: none;
     }
-
     .aboutcontainer {
         width: 80vw;
         padding-bottom: 5vh;
@@ -390,5 +399,8 @@ body{
         text-align: center;
         font-size: 13px;
         width: 80%;
+    }
+    .experiencetxt {
+        font-size: 45px;
     }
 }

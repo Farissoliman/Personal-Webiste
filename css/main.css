@@ -173,6 +173,9 @@ body{
     font-weight: bolder;
     margin-bottom: -1vh;
     color: rgba(23, 23, 23, 0.7);
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
+    font-style: normal;
 }
 .student {
     font-family: Poppins;
@@ -402,5 +405,11 @@ body{
     }
     .experiencetxt {
         font-size: 45px;
+    }
+    .canvascontainer {
+        padding: 0vh 5vh 0vh 5vh;
+    }
+    #myCanvas {
+        width: 100%;
     }
 }

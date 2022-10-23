@@ -4,7 +4,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 :root {
     --background-gradient:     radial-gradient(farthest-corner at left bottom, #ff38eb,30%, transparent),
-    /* radial-gradient(farthest-corner at left top, #8D6DB7, rgb(141, 109, 183)50%,transparent), */
     linear-gradient(to left, #00ddff, 80%, transparent);
 }
 .navbar {
@@ -71,14 +70,11 @@ body{
     overflow-x: hidden;
     overscroll-behavior: none;
     background-color: "#00ddff"
-    /* background: var(--background-gradient); */
-    /* transition: background-color 0.5s linear; */
 }
 .home {
     position: relative;
     margin-top: 0px;
     min-height: 100vh;
-    /* background: var(--background-gradient); */
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -94,8 +90,6 @@ body{
     position: absolute;
     height: 132vh;
     width: 90vw;
-    /* background-color: #5d2d97bf;
-    border-radius: 50%; */
     top: -41vw;
     left: -73vh;
     z-index: 2;
@@ -105,25 +99,16 @@ body{
     position: absolute;
     width: 50vw;
     height: 83vh;
-    /* border-radius: 50%;
-    background-color: #D9ABFF; */
     left: -20vw;
     top: -50vh;
-    /* filter: blur(40px);
-    -webkit-filter: blur(40px); */
     z-index: 2;
 }
 .purple2 {
     position: absolute;
     height: 132vh;
     width: 90vw;
-    /* background: hsla(267, 54%, 38%, 0.749);
-    -moz-background: #5d2d976e;
-    border-radius: 50%; */
     top: 226vh;
     right: -73vh;
-    /* filter: blur(170px);
-    -webkit-filter: blur(170px); */
     z-index: 2;
     opacity: 0.7;
 }
@@ -143,12 +128,8 @@ body{
     position: absolute;
     height: 102vh;
     width: 62vw;
-    /* background-color: #99edf9;
-    border-radius: 50%; */
     top: 36vw;
     right: -40vh;
-    /* filter: blur(20px);
-    -webkit-filter: blur(20px); */
     z-index: 2;
 }
 .container {
@@ -405,6 +386,8 @@ body{
     }
     .experiencetxt {
         font-size: 45px;
+        max-width: none;
+        padding: 10vh 5vh 0 5vh;
     }
     .canvascontainer {
         padding: 0vh 5vh 0vh 5vh;

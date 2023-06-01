@@ -8,21 +8,20 @@ window.onload = function() {
     }
   };
 
-var canvas = document.getElementById('myCanvas');
-var canvasContainer = document.getElementById('myCanvas');
-var style = window.getComputedStyle(canvasContainer);
-var canvasWidth = style.getPropertyValue('width');
-var indexOfP = canvasWidth.indexOf("p");
-var widthNum = canvasWidth.substring(0,indexOfP);
-canvas.width = widthNum;
-var heightRatio = 1;
-canvas.height = canvas.width * heightRatio;
+// Adjust canvas size depending on device
+const canvasContainer = document.getElementById('myCanvas');
+const style = window.getComputedStyle(canvasContainer);
+const canvasWidth = style.getPropertyValue('width');
+let indexOfP = canvasWidth.indexOf('p');
+let widthNum = canvasWidth.substring(0,indexOfP);
+canvasContainer.width = widthNum;
+canvasContainer.height = canvasContainer.width * 1;
 
 //Background color change
 const $body = $('body');
-const $startTrigger = $body.find("container");
-const $endTrigger = $body.find("endPoint")
-const colorToDark = gsap.fromTo($body, { background: "linear-gradient(to left, #62DBF1, 80%, #F992F1)" },{ background: "#1E1E1E" })
+const $startTrigger = $body.find('container');
+const $endTrigger = $body.find('endPoint');
+const colorToDark = gsap.fromTo($body, { background: "linear-gradient(to left, #62DBF1, 80%, #F992F1)"},{ background: "#1E1E1E"})
 
 ScrollTrigger.create({
   trigger: $startTrigger,
@@ -31,15 +30,9 @@ ScrollTrigger.create({
   markers: false,
   scrub: true,
   animation: colorToDark
-  //onEnter: () =>
-  //  gsap.to($section, { backgroundColor: "#232E3E", overwrite: "auto" }),
-  //onLeaveBack: () =>
-  //  gsap.to($section, { backgroundColor: "white", overwrite: "auto" })
 });
 
-
-
-const colorToWhite= gsap.fromTo($body, { background: "#1E1E1E" },{ background: "linear-gradient(45deg, rgba(249,146,241,1) 0%, rgba(98,219,241,1) 38%)", immediateRender: false })
+const colorToGradient= gsap.fromTo($body, { background: "#1E1E1E", immediateRender: false },{ background: "linear-gradient(45deg, rgba(249,146,241,1) 0%, rgba(98,219,241,1) 38%)", immediateRender: false })
 
 ScrollTrigger.create({
   trigger: $startTrigger,
@@ -47,10 +40,12 @@ ScrollTrigger.create({
   end: "+=700px",
   markers: false,
   scrub: true,
-  animation: colorToWhite
-  //onEnter: () =>
-  //  gsap.to($section, { backgroundColor: "#232E3E", overwrite: "auto" }),
-  //onLeaveBack: () =>
-  //  gsap.to($section, { backgroundColor: "white", overwrite: "auto" })
+  animation: colorToGradient
 });
   
+
+//Scroll to elements
+function scrollToElement(elementId) {
+    const elementToScrollTo = document.getElementById(elementId);
+    elementToScrollTo.scrollIntoView({ behavior: "smooth" });;
+}

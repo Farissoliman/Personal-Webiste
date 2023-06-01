@@ -21,11 +21,11 @@
     </div>
     <ul>
         <div class="menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="mailto:fasolima@ncsu.edu">Contact</a></li>
-            <li><a href="https://github.com/Farissoliman/Personal-Webiste/blob/master/Resume.pdf" target="_blank">Resume</a></li>
+            <li><a onclick="scrollToElement('home')" >Home</a></li>
+            <li><a onclick="scrollToElement('aboutMeSection')" >About</a></li>
+            <li><a onclick="scrollToElement('projectSection')" >Projects</a></li>
+            <li><a href="mailto:fasolima@ncsu.edu"><u>Contact</u></a></li>
+            <li><a href="https://github.com/Farissoliman/Personal-Webiste/blob/master/Resume.pdf" target="_blank"> <u>Resume</u></a></li>
         </div>
     </ul>
 </nav>
@@ -34,8 +34,8 @@
     <ul>
         <a><i class="fa-solid fa-x"></i></a>
         <li><a href="/">Home</a></li>
-        <li><a href="/">About</a></li>
-        <li><a href="/">Projects</a></li>
+        <li><a id="About">About</a></li>
+        <li><a id="Projects">Projects</a></li>
         <li><a href="mailto:fasolima@ncsu.edu">Contact</a></li>
         <li><a href="https://github.com/Farissoliman/Personal-Webiste/blob/master/Resume.pdf" target="_blank">Resume</a></li>
     </ul>
@@ -46,7 +46,7 @@
 </div>
 
 <body>
-    <div class="home">
+    <div id="home" class="home">
         <div class="container">
             <div class="hello">Hello world, my name is</div>
             <div class="name">Faris Soliman</div>
@@ -65,11 +65,8 @@
         <div class="purple">
             <img src="static/Ellipse.svg" style="width: 100%;height:100%;">
         </div>
-        <!-- <div class="circle">
-                <img src="static/EllipsePink.svg" style="width: 100%;height:100%;">
-            </div> -->
         <div class="blue"></div>
-        <div style="display: flex; position: relative; justify-content: center;">
+        <div id="aboutMeSection" style="display: flex; position: relative; justify-content: center;">
             <div class="aboutcontainer">
                 <div>
                     <h2 class="abouttxt">About Me</h2>
@@ -115,23 +112,23 @@
                     <li><a href="/">Front End</a></li>
                     <li><a href="/">Back End</a></li>
                     <li><a href="/">Java</a></li>
-                    <!-- <li><a href="/">Web Development</a></li>
-                        <li><a href="/">Machine Learning</a></li>
-                        <li><a href="/">AI</a></li>
-                        <li><a href="/">IOS Development</a></li> -->
+                    <li><a href="/">Eclipse</a></li>
+                    <li><a href="/">Figma</a></li>
+                    <li><a href="/">VSCode</a></li>
+                    <li><a href="/">Adobe XD</a></li>
                 </ul>
             </div>
         </div>
         <div class="purple2">
-            <img src="static/Ellipse.svg" style="width: 100%;height:100%;">
+            <img src="static/Ellipse.svg" alt="" style="width: 100%;height:100%;">
         </div>
         <div class="circle2">
-            <img src="static/EllipsePink.svg" style="width: 100%;height:100%;">
+            <img src="static/EllipsePink.svg" alt="" style="width: 100%;height:100%;">
         </div>
         <div class="blue">
-            <img src="static/EllipseBlue.svg" style="width: 100%;height:100%;">
+            <img src="static/EllipseBlue.svg" alt="" style="width: 100%;height:100%;">
         </div>
-        <div style="position:relative; z-index: 10;">
+        <div id="projectSection" style="position:relative; z-index: 10;">
             <div>
                 <h2 class="featuredprojects" style="margin-top: 10vh;">Featured Projects</h2>
             </div>

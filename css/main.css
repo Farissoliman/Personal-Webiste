@@ -47,6 +47,7 @@
     font-size: 25px;
     font-weight: 500;
     color: rgba(23, 23, 23, 0.7);
+    cursor: pointer;
    }
 .sidebar {
      height: 100%;
@@ -117,7 +118,6 @@ body{
     width: 40vw;
     height: 73vh;
     border-radius: 50%;
-    background-color: #D9ABFF;
     left: -15vw;
     top: 150vh;
     filter: blur(40px);
@@ -151,12 +151,10 @@ body{
     font-family: Poppins;
     font-size: 7.3vw;
     margin: 0px;
-    font-weight: bolder;
     margin-bottom: -1vh;
     color: rgba(23, 23, 23, 0.7);
     -webkit-font-smoothing: antialiased;
     font-weight: normal;
-    font-style: normal;
 }
 .student {
     font-family: Poppins;

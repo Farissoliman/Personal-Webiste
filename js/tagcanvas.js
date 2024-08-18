@@ -2331,7 +2331,7 @@
     // outlineMethod: 'outline',
     // outlineRadius: 0,
     textColour: '#ff99ff',
-    textHeight: 25,
+    textHeight: 15,
     textFont: 'Helvetica, Arial, sans-serif',
     shadow: '#000',
     shadowBlur: 0,
